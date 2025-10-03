@@ -1,0 +1,98 @@
+body {
+    background-color: bisque;
+}
+
+.title {
+    background-color: aqua;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    outline: 1px solid black;
+}
+
+.title-text {
+    padding: 0px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notice {
+    display: flex;
+    align-items: center;
+    width: 100%;           /* পুরো স্ক্রিন প্রস্থ */
+    background: #000;      /* কালো ব্যাকগ্রাউন্ড */
+    background-color: rgb(124, 199, 218);           /* টেক্সট সাদা */
+    overflow: hidden;   /* টেক্সট container এর বাইরে গেলে দেখাবে না */
+    white-space: nowrap;   /* টেক্সট এক লাইনে থাকবে */
+    height: 30px;
+   margin-top: 5px;
+   
+    
+}
+
+.notice-text {
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll 30s linear infinite;
+
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+
+.series {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 0px;
+
+
+}
+
+.series-text {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.series-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    background-color: aqua;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list1 {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
