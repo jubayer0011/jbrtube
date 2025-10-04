@@ -40,5 +40,12 @@ if (watch === "reply1988") {
         videoTitle.textContent = "Reply 1988 episode 02";
     });
 
+        ep2.addEventListener("click", function() {
+        let link = "https://drive.google.com/file/d/1_allDGa3LNXvHXyk4MN1oS1ZRKHe75bB/preview";
+        playvideo(link);
+        videoTitle.textContent = "Reply 1988 episode 02";
+    });
+
+
     // similarly ep3, ep4, ep5...
 }
