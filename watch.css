@@ -1,0 +1,121 @@
+body {
+    background-color: bisque;
+}
+
+.title {
+    background-color: aqua;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    outline: 1px solid black;
+}
+
+.video-title {
+      background-color: aqua;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    outline: 1px solid black;
+}
+
+.title-text {
+    padding: 0px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notice {
+    display: flex;
+    align-items: center;
+    width: 100%;           /* পুরো স্ক্রিন প্রস্থ */
+    background: #000;      /* কালো ব্যাকগ্রাউন্ড */
+    background-color: rgb(124, 199, 218);           /* টেক্সট সাদা */
+    overflow: hidden;   /* টেক্সট container এর বাইরে গেলে দেখাবে না */
+    white-space: nowrap;   /* টেক্সট এক লাইনে থাকবে */
+    height: 30px;
+   margin-top: 5px;
+   
+    
+}
+
+.notice-text {
+    font-weight: bold;
+    padding-left: 100%;
+    animation: scroll 30s linear;
+
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+
+.series {
+   
+ background-color: aqua;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+
+
+}
+
+.series-text {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+   
+}
+
+.series-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.player {
+    border-radius: 5px;
+    outline: 1px solid black;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.scrollable-div {
+  width: 100%;          /* div এর width */
+  height: 50%;         /* div এর height */
+  overflow-y: auto;      /* vertical scroll */
+  border: 1px solid #ccc;
+  padding: 10px;
+
+ 
+}
