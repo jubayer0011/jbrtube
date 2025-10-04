@@ -98,24 +98,28 @@ body {
 .player {
     border-radius: 5px;
     outline: 1px solid black;
-    height: 40%;
     width: 100%;
+    max-width: 800px;     /* বড় স্ক্রিনে সীমা নির্ধারণ */
+    margin: 10px auto;
+    aspect-ratio: 16 / 9; /* height স্বয়ংক্রিয় */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
     border-radius: 5px;
 }
 
-.scrollable-div {
-  width: 100%;          /* div এর width */
-  height: 50%;         /* div এর height */
-  overflow-y: auto;      /* vertical scroll */
-  border: 1px solid #ccc;
-  padding: 10px;
 
+
+.scrollable-div {
+   display: flex;          /* horizontal layout */
+    flex-wrap: wrap;        /* space কম হলে next line এ যাবে */
+    gap: 10px;              /* button এর মধ্যে spacing */
+    margin: 10px 0;         /* উপরের নিচের spacing */
  
 }
